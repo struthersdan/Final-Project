@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  colorway: MyString
+  size: 9.99
+  condition: MyString
+  price: 
+  quantity: 1
+  brand: MyString
+  model: MyString
+  for_sale: false
+  release_date: 2017-11-04
+  brand_id: 
+
+two:
+  colorway: MyString
+  size: 9.99
+  condition: MyString
+  price: 
+  quantity: 1
+  brand: MyString
+  model: MyString
+  for_sale: false
+  release_date: 2017-11-04
+  brand_id: 
