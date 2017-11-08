@@ -12,6 +12,10 @@ ActiveAdmin.register Sneaker do
 #   permitted
 # end
 
-permit_params :colorway, :size, :model, :brand
+permit_params :colorway, :size, :model, :brand, :condition, :quantity, :price,
+              :for_sale, :release_date, :image
+
+
+
 
 end
