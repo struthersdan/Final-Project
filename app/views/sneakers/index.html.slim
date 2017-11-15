@@ -16,7 +16,7 @@ body
        th Quantity
     - @sneakers.each do | kicks |
       tr
-        td = kicks.colorway
+        td = link_to kicks.colorway.to_s, sneakers_url(:id => kicks.id)
         td = kicks.brand
         td = kicks.model
         td = kicks.size
@@ -24,4 +24,3 @@ body
         td = kicks.release_date
         td = kicks.price
         td = kicks.quantity
-        
