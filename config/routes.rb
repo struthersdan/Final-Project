@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'sneakers/index'
 
-  get 'sneakers/show'
+  get 'sneakers/:id' , to: 'sneakers#show', as:'sneaker'
 
   #devise_for :sneakers, ActiveAdmin::Devise.config
   devise_for :admin_users, ActiveAdmin::Devise.config
