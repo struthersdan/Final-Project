@@ -1,0 +1,27 @@
+h1 JSI
+h2 Just Sneaker Inventory(s)
+p This is your initial inventory! Use it to keep track of your sneaker collection
+
+body
+  table#sneakers
+    thead
+      tr
+       th Colorway
+       th Brand
+       th Model
+       th Size
+       th Condition
+       th Release Date
+       th Price
+       th Quantity
+    - @sneakers.each do | kicks |
+      tr
+        td = kicks.colorway
+        td = kicks.brand
+        td = kicks.model
+        td = kicks.size
+        td = kicks.condition
+        td = kicks.release_date
+        td = kicks.price
+        td = kicks.quantity
+        
