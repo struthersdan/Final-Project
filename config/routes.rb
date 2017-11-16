@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  get 'pages/about'
+  get 'pages/about' , as: :about
 
-  get 'pages/contact'
+  get 'pages/contact' , as: :contact
 
   get 'sneakers/index'
 
