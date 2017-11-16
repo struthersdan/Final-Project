@@ -1,6 +1,6 @@
 class SneakersController < ApplicationController
   def index
-  @sneakers = Sneaker.all
+  @sneakers = Sneaker.order("colorway").page(params[:page]).per(5)
 
     end
 
@@ -8,4 +8,5 @@ class SneakersController < ApplicationController
     @sneaker = Sneaker.find(params[:id])
     # @sneaker = params[:number]
   end
+
 end
