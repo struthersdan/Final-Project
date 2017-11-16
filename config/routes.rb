@@ -1,7 +1,13 @@
 Rails.application.routes.draw do
+  get 'pages/about'
+
+  get 'pages/contact'
+
   get 'sneakers/index'
 
   get 'sneakers/:id' , to: 'sneakers#show', as:'sneakers'
+
+  root 'sneakers#index',  as: :home
 
   resources :sneaker
   #devise_for :sneakers, ActiveAdmin::Devise.config
