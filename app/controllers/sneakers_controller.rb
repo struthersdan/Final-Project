@@ -9,4 +9,8 @@ class SneakersController < ApplicationController
     # @sneaker = params[:number]
   end
 
+  def search_params
+    #params.require(:sneaker[id]
+  end
+
 end
