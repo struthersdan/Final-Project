@@ -30,7 +30,7 @@ p = link_to "Contact" , contact_path
 
 p = form_tag(search_path method:  :get ) do
     = text_field_tag :term, params[:term]
-    = submit_tag 'Search' , name: nil
+    = submit_tag 'Search' , name: nil 
     end
 
 = paginate @sneakers

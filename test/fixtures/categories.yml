@@ -1,9 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  sneaker_id: 1
-  sneaker_quantity: 1
+  name: MyString
 
 two:
-  sneaker_id: 1
-  sneaker_quantity: 1
+  name: MyString
