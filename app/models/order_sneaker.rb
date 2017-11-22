@@ -29,7 +29,7 @@ class OrderSneaker < ApplicationRecord
 
   def order_present
     if order.nil?
-      errors.add(:order, "your oder is whack fam.")
+      errors.add(:order, "your order is whack fam.")
     end
   end
 

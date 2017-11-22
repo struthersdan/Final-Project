@@ -18,7 +18,7 @@ Rails.application.routes.draw do
   root 'sneakers#index',  as: :home
   root to: "sneakers#index"
 
-  resources :sneaker
+  resources :sneakers, only: [:index]
   resource :cart, only: [:show]
   resources :order_sneakers, only: [:create, :udpate, :destroy]
 
