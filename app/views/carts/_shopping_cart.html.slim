@@ -1,0 +1,11 @@
+- if !@order_sneaker.nil? && @order_sneaker.errors.any?
+  .alert.alert-danger
+    ul
+      - @order_sneaker.errors.full_messages.each do |msg|
+        li= msg
+- if @order_sneakers.size == 0
+  p.text-center
+    | There are no sneakers in your shopping cart.  Please #{link_to "go back", root_path} and add some kicks to your cart.
+- else
+  - @order_sneakers.each do |order_sneaker|
+    = render 'carts/cart_row', sneaker: order_sneaker.sneaker, order_sneaker: order_sneaker, show_total: true

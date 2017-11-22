@@ -21,6 +21,6 @@ class OrderSneakersController < ApplicationController
   end
   private
   def order_sneaker_params
-    params.require(:order_item).permit(:quantity, :sneaker_)
+    params.require(:order_sneaker).permit(:quantity, :sneaker_id)
   end
 end

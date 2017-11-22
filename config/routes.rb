@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   get 'sneakers/:id' , to: 'sneakers#show', as:'sneakers'
 
   root 'sneakers#index',  as: :home
+  root to: "sneakers#index"
 
   resources :sneaker
   resource :cart, only: [:show]
