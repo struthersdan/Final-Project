@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'order_sneakers/create'
+
+  get 'order_sneakers/update'
+
+  get 'order_sneakers/destroy'
+
+  get 'carts/show'
+
   get 'pages/about' , as: :about
 
   get 'pages/contact' , as: :contact
@@ -10,6 +18,9 @@ Rails.application.routes.draw do
   root 'sneakers#index',  as: :home
 
   resources :sneaker
+  resource :cart, only: [:show]
+  resources :order_sneakers, only: [:create, :udpate, :destroy]
+
   #devise_for :sneakers, ActiveAdmin::Devise.config
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
